@@ -1,16 +1,40 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: 'Caminho Proffisional'
+template: home
+cta_text: 'Começe Agora !'
+cta_link: 'https://www.youtube.com/'
+subtitle_1: 'Ligue-nos ! +351 912 324 783'
+subtitle_2: 'Para qualquer dúvida ou esclarecimento'
+author: 1d8886ec-cd1a-4eef-9230-f17e7ea39f70
+herro_banner_image: istockphoto-1416048929-612x612.jpg
+updated_by: 1d8886ec-cd1a-4eef-9230-f17e7ea39f70
+updated_at: 1712600958
+hero_banner_image: hero.png
+image_logo: logo-no-background.png
+page_title: 'Encontre o seu futuro hoje! Descubra oportunidades únicas e construa a carreira que sempre sonhou.'
+features:
+  -
+    id: lurabwhw
+    feature_title: 'Acesso a uma ampla variedade de vagas:'
+    feature_content: 'Os sites de emprego reúnem oportunidades de diversas empresas e setores, permitindo que você encontre uma grande quantidade de vagas em um só lugar.'
+    feature_image: icon-01.svg
+    type: features
+    enabled: true
+  -
+    id: lurad2h3
+    feature_title: 'Ferramentas de busca eficientes'
+    feature_content: 'Estes sites oferecem filtros e sistemas de pesquisa avançados que ajudam a encontrar posições que correspondam exatamente ao que você procura, seja por localização, indústria ou tipo de contrato2.'
+    feature_image: icon-02.svg
+    type: features
+    enabled: true
+  -
+    id: lurade8v
+    feature_title: 'Facilidade e comodidade'
+    feature_content: 'Você pode se candidatar a várias vagas rapidamente, sem sair de casa, e muitos sites permitem que você carregue seu currículo e aplique com apenas alguns cliques.'
+    feature_image: icon-03.svg
+    type: features
+    enabled: true
 ---
-## Welcome to your brand new Statamic site!
-
-Not sure where to do next? Here are a few ideas, but feel free to explore in your own way, in your own time.
-
-- [Jump into the Control Panel](/cp) and edit this page or begin setting up your own collections and blueprints.
-- [Head to the docs](https://statamic.dev) and learn how Statamic works.
-- [Watch some Statamic videos](https://youtube.com/statamic) on YouTube.
-- [Join our Discord chat](https://statamic.com/discord) and meet thousands of other Statamic developers.
-- [Start a discussion](https://github.com/statamic/cms/discussions) and get answers to your questions.
-- [Star Statamic on Github](https://github.com/statamic/cms) if you enjoy using it!
+Abra as portas para um futuro promissor com as nossas vagas de emprego. **Encontre o trabalho que você merece e avance na sua carreira**. Junte-se a uma comunidade de profissionais de sucesso e comece a jornada para alcançar seus objetivos hoje mesmo!
