@@ -74,70 +74,11 @@
     <!-- ===== Team End ===== -->
 
     <!-- ===== Services Start ===== -->
-    <section class="lj tp kr">
-        <!-- Section Title Start -->
-        <div
-            x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}">
-            <div class="animate_top bb ze rj ki xn vq">
-                <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
-                </h2>
-                <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-            </div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ze ki xn yq mb en">
-            <div class="wc qf pn xo ng">
-                <!-- Service Item -->
-                <div class="animate_top sg oi pi zq ml il am cn _m">
-                    <img src="images/icon-04.svg" alt="Icon" />
-                    <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                </div>
-
-                <!-- Service Item -->
-                <div class="animate_top sg oi pi zq ml il am cn _m">
-                    <img src="images/icon-05.svg" alt="Icon" />
-                    <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                </div>
-
-                <!-- Service Item -->
-                <div class="animate_top sg oi pi zq ml il am cn _m">
-                    <img src="images/icon-06.svg" alt="Icon" />
-                    <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                </div>
-
-                <!-- Service Item -->
-                <div class="animate_top sg oi pi zq ml il am cn _m">
-                    <img src="images/icon-07.svg" alt="Icon" />
-                    <h4 class="ek zj kk wm nb _b">Speed Optimized</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                </div>
-
-                <!-- Service Item -->
-                <div class="animate_top sg oi pi zq ml il am cn _m">
-                    <img src="images/icon-05.svg" alt="Icon" />
-                    <h4 class="ek zj kk wm nb _b">Fully Customizable</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                </div>
-
-                <!-- Service Item -->
-                <div class="animate_top sg oi pi zq ml il am cn _m">
-                    <img src="images/icon-06.svg" alt="Icon" />
-                    <h4 class="ek zj kk wm nb _b">Regular Updates</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{ partial:services }}
     <!-- ===== Services End ===== -->
 
     <!-- ===== Pricing Table Start ===== -->
-    <section x-data="setup()" class="i pg fh rm ji gp uq">
+    {{# <section x-data="setup()" class="i pg fh rm ji gp uq">
         <!-- Bg Shapes -->
         <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
         <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
@@ -206,10 +147,10 @@
                 </template>
             </div>
         </div>
-    </section>
+    </section> #}}
     <!-- ===== Pricing Table End ===== -->
 
-    <!-- ===== Projects Start ===== -->
+    {{# <!-- ===== Projects Start ===== -->
     <section class="pg pj vp mr oj wp nr">
         <!-- Section Title Start -->
         <div
@@ -326,7 +267,7 @@
             </div>
         </div>
     </section>
-    <!-- ===== Projects End ===== -->
+    <!-- ===== Projects End ===== --> #}}
 
     <!-- ===== Testimonials Start ===== -->
     <section class="hj rp hr">
@@ -406,7 +347,7 @@
     <!-- ===== Testimonials End ===== -->
 
     <!-- ===== Counter Start ===== -->
-    <section class="i pg qh rm ji hp">
+    {{# <section class="i pg qh rm ji hp">
         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
         <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
         <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
@@ -432,11 +373,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> #}}
     <!-- ===== Counter End ===== -->
 
     <!-- ===== Clients Start ===== -->
-    <section class="pj vp mr">
+    {{# <section class="pj vp mr">
         <!-- Section Title Start -->
         <div
             x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
@@ -478,7 +419,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> #}}
     <!-- ===== Clients End ===== -->
 
     <!-- ===== Blog Start ===== -->
