@@ -1,0 +1,24 @@
+title: Button
+fields:
+  -
+    handle: cta_text
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'CTA Text'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: cta_link
+    field:
+      type: link
+      display: 'CTA Link'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

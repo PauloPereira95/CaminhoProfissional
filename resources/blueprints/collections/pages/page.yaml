@@ -6,13 +6,6 @@ tabs:
       -
         fields:
           -
-            handle: title
-            field:
-              type: text
-              required: true
-              validate:
-                - required
-          -
             handle: page_title
             field:
               type: text
@@ -26,6 +19,13 @@ tabs:
               input_type: text
               antlers: false
               hide_display: false
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
           -
             handle: content
             field:

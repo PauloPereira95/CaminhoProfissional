@@ -1,0 +1,26 @@
+title: 'Main and Subtitle'
+fields:
+  -
+    handle: main_title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Main Title'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: sub_title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Sub Title'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

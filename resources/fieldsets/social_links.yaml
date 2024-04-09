@@ -1,0 +1,32 @@
+title: 'Social Links'
+fields:
+  -
+    handle: facebook_profile_link
+    field:
+      type: link
+      display: 'Facebook Profile Link'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: instagram_profile_link_duplicate
+    field:
+      type: link
+      display: 'Instagram Profile Link'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: linkedin_profile_link
+    field:
+      type: link
+      display: 'LinkedIn Profile Link'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
