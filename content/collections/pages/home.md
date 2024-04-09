@@ -10,7 +10,7 @@ subtitle_2: 'Para qualquer dúvida ou esclarecimento'
 author: 1d8886ec-cd1a-4eef-9230-f17e7ea39f70
 herro_banner_image: istockphoto-1416048929-612x612.jpg
 updated_by: 1d8886ec-cd1a-4eef-9230-f17e7ea39f70
-updated_at: 1712600958
+updated_at: 1712655341
 hero_banner_image: hero.png
 image_logo: logo-no-background.png
 page_title: 'Encontre o seu futuro hoje! Descubra oportunidades únicas e construa a carreira que sempre sonhou.'
