@@ -1,6 +1,7 @@
-title: Articles
-template: articles/show
+title: 'News Articles'
+template: news/show
 layout: layout
+mount: 46c281d6-e97e-44ad-b440-ec9d21344e88
 revisions: false
 route: '/{mount}/{slug}'
 date: true
@@ -13,5 +14,3 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
-structure:
-  root: false
