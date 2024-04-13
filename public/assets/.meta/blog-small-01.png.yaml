@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: asdasd
 size: 13084
-last_modified: 1712737576
+last_modified: 1712859099
 width: 90
 height: 70
 mime_type: image/png

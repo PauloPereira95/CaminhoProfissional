@@ -1,0 +1,129 @@
+title: 'News Article'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: news_main_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'News Main Image'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: content
+            field:
+              buttons:
+                - h1
+                - h2
+                - h3
+                - h4
+                - h5
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h6
+              smart_typography: false
+              save_html: true
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: true
+              link_noreferrer: false
+              target_blank: true
+              container: assets
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: Content
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: category
+            field:
+              options:
+                Events: Events
+                'Blog ': Blog
+                Tips: Tips
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Category
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
