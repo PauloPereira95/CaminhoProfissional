@@ -6,6 +6,7 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.vue',
         './content/**/*.md',
+        'content: ["./src/**/*.{html,js}"],',
     ],
 
     theme: {

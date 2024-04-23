@@ -1,6 +1,8 @@
 <?php
 
+use Statamic\Facades\Taxonomy;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::statamic('example', 'example-view', [
-//    'title' => 'Example'
-// ]);
+// Get All Tags
+
+Route::statamic('{slug}/search', 'search');
+Route::get('/tags' , function (){
+    $taxonomy = Taxonomy::find('tags')->terms()->get();
+    return response()->json($taxonomy);
+});
