@@ -1,24 +1,24 @@
-title: 'Main and Subtitle'
+title: 'Two input Text'
 fields:
   -
-    handle: main_title
+    handle: text_1
     field:
       input_type: text
       antlers: false
       type: text
-      display: 'Main Title'
+      display: 'Text 1'
       listable: hidden
       instructions_position: above
       visibility: visible
       replicator_preview: true
       hide_display: false
   -
-    handle: sub_title
+    handle: text_2
     field:
       input_type: text
       antlers: false
       type: text
-      display: 'Sub Title'
+      display: 'Text 2'
       listable: hidden
       instructions_position: above
       visibility: visible
