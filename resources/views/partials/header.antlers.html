@@ -3,10 +3,10 @@
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
         <div class="vd to/4 tc wf yf">
             <a href="/">
-                <img class="om" src="{{ glide:image_logo width="200" height="50" }}" alt="Logo Light" />
-                <img class="xc nm" src="{{ glide:image_logo width="200" height="50" }}" alt="Logo Dark" />
-            </a>
 
+                <img class="om" src="{{ glide:company_logo:company_logo width='200' height='50' }}" alt="{{ company_logo:alt }}" />
+                <img class="xc nm" src="{{glide:company_logo:company_logo width="200" height="50" }}" alt="{{ company_logo:alt }}" />
+            </a>
             <!-- Hamburger Toggle BTN -->
             <button class="po rc" @click="navigationOpen = !navigationOpen">
                 <span class="rc i pf re pd">
@@ -52,3 +52,4 @@
         </div>
     </div>
 </header>
+
