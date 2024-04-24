@@ -2,9 +2,15 @@
 {{ if slug == "contactos" }}
 <section id="support" class="i pg fh rm ji gp uq">
     <!-- Bg Shapes -->
+    {{ if yellow_shape_1 }}
     <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
+    {{ /if yellow_shape_1 }}
+    {{ if red_shape_1 }}
     <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
+    {{ /if red_shape_1 }}
+    {{ if blue_shape }}
     <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
+    {{ /if blue_shape }}
     <img src="images/shape-12.svg" alt="Shape" class="h p s" />
     <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 
@@ -24,8 +30,12 @@
         <div class="tc uf sn tf rn un zf xl:gap-10">
             <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
                 <!-- Bg Shapes -->
+                {{ if red_shape_2 }}
                 <img src="images/shape-03.svg" alt="Shape" class="h la x wd" />
+                {{ /if red_shape_2 }}
+                {{ if yellow_shape_2 }}
                 <img src="images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
+                {{ /if yellow_shape_2 }}
                 {{ two_input_text }}
                 <div class="fb">
                     <h4 class="wj kk wm cc">{{ text_1 }}</h4>

@@ -10,7 +10,7 @@ features:
     type: features
     enabled: false
 updated_by: 1d8886ec-cd1a-4eef-9230-f17e7ea39f70
-updated_at: 1713882359
+updated_at: 1713971009
 subtitle: 'É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout. O ponto de usar.'
 cta_text: Enviar
 parent: home
@@ -34,11 +34,17 @@ two_input_text:
     text_2: '+351 912 932 832'
     type: new_set
     enabled: true
-  -
-    id: lvch1z1y
-    type: new_set
-    enabled: false
 facebook_profile_link: 'https://www.youtube.com/watch?v=lZAoFs75_cs&t=3203s'
 instagram_profile_link_duplicate: 'https://www.youtube.com/watch?v=8ufEVUntbm8&list=PLuKuG4HcpMVUktb0vFGXTYWIIncYwIkR9'
 linkedin_profile_link: 'https://www.youtube.com/'
+yellow_shap_1: false
+yellow_shap_2: true
+blue_shap: true
+red_shap_1: true
+red_shap_2: true
+yellow_shape_1: true
+yellow_shape_2: true
+blue_shape: true
+red_shape_1: true
+red_shape_2: true
 ---

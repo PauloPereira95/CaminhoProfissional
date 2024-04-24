@@ -100,6 +100,61 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: yellow_shape_1
+            field:
+              default: true
+              type: toggle
+              display: 'Yellow Shape 1'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: yellow_shape_2
+            field:
+              default: true
+              type: toggle
+              display: 'Yellow Shape 2'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: blue_shape
+            field:
+              default: true
+              type: toggle
+              display: 'Blue Shape'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: red_shape_1
+            field:
+              default: true
+              type: toggle
+              display: 'Red Shape 1'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: red_shape_2
+            field:
+              default: true
+              type: toggle
+              display: 'Red Shape 2'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
