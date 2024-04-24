@@ -1,1 +1,11 @@
 title: 'Contact Form'
+email:
+  -
+    id: lvdr0dkv
+    to: '{{ email }}'
+    from: caminhoprofissional@email.com
+    cc: caminhoprofissional@email.com
+    bcc: '{{ email }}'
+    subject: 'New submission from {{ name }}'
+    html: vendor/notifications/email
+    markdown: true

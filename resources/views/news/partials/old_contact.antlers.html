@@ -93,18 +93,17 @@
                 {{ /if }}
                 {{# <form action="https://formbold.com/s/unique_form_id" method="POST"> #}}
                     <div class="tc sf yo ap zf ep qb">
-
                         {{ fields }}
                         {{ if handle == "name" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="fullname">{{ display }}</label>
+                            <label class="rc ac" for="{{ handle }}">{{ display }}</label>
                             <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
                         {{ /if }}
                         {{ if handle == "email" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="email">{{ display }}</label>
+                            <label class="rc ac" for="{{ handle }}">{{ display }}</label>
                             <input type="email" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
@@ -115,14 +114,14 @@
                         {{ fields }}
                         {{ if handle == "phone_number" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="phone">{{ display }}</label>
+                            <label class="rc ac" for="{{ handle }}">{{ display }}</label>
                             <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
                         {{ /if }}
                         {{ if handle == "subject" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="phone">{{ display }}</label>
+                            <label class="rc ac" for="{{ handle }}">{{ display }}</label>
                             <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>

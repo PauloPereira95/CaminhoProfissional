@@ -10,7 +10,7 @@ tabs:
               input_type: text
               antlers: false
               type: text
-              display: Name
+              display: Nome
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -36,7 +36,7 @@ tabs:
               input_type: text
               antlers: false
               type: text
-              display: 'Phone Number'
+              display: 'Numero de Telefone'
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -49,19 +49,19 @@ tabs:
               input_type: text
               antlers: false
               type: text
-              display: Subject
+              display: Assunto
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
-              placeholder: 'Insira aqui assunto'
+              placeholder: 'Insira aqui o assunto'
           -
             handle: message
             field:
               antlers: false
               type: textarea
-              display: Message
+              display: Messagem
               listable: hidden
               instructions_position: above
               visibility: visible
