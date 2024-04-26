@@ -1,0 +1,31 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: slogan
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Slogan
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: copyright
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Copyright
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              placeholder: 'Insira aqui o Copyright'

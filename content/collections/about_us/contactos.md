@@ -1,5 +1,5 @@
 ---
-id: 3c0f7f41-87a3-435b-a5d3-d679a7af580f
+id: fd054be6-cf40-4830-8fcc-3bc64351e692
 blueprint: contacts
 page_title: Contactos
 title: Contactos
@@ -48,3 +48,4 @@ blue_shape: true
 red_shape_1: true
 red_shape_2: true
 ---
+
