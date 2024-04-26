@@ -11,16 +11,22 @@
                     {{ title }}
                 </h2>
                 <p class="lk">
-                {{ subtitle_1 }}
+                    {{ subtitle_1 }}
                 </p>
             </div>
             <div class="animate_right bf">
-                <a href="{{ cta_link }}" target="_blank" class="vc ek kk hh rg ol il cm gi hi">
-                    {{ cta_text }}
-                </a>
+
+                {{ collection:about_us }}
+                {{ if slug == 'contactos' }}
+                <a href="#{{ slug }}" class="vc ek kk hh rg ol il cm gi hi">
+                        {{ /if }}
+                        {{ /collection:about_us }}
+                        {{ cta_text }}
+                    </a>
+
             </div>
         </div>
     </div>
 </section>
 {{ /if }}
-{{ /collection:pages  }}
+{{ /collection:pages }}
