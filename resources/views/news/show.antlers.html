@@ -11,8 +11,8 @@
                     <h2 class="ek vj 2xl:ud-text-title-lg kk wm nb gb">{{ title }}</h2>
 
                     <ul class="tc uf cg 2xl:ud-gap-15 fb">
-                        <li><span class="rc kk wm">Author: </span> {{ author:name }}</li>
-                        <li><span class="rc kk wm">Published On: </span> {{ date }}</li>
+                        <li><span class="rc kk wm">Autor: </span> {{ author:name }}</li>
+                        <li><span class="rc kk wm">Publicado em : </span> {{ date | format: 'j \d\e F, Y' | translate_month}}</li>
                         {{ tags }}
                         <li></a><span class="rc kk wm">Category: </span> <a href="{{ url }}">{{ title }}</a></li>
                         {{ /tags }}
