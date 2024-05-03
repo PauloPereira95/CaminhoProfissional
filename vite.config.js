@@ -8,7 +8,9 @@ export default defineConfig({
             input: [
                 'resources/css/site.css',
                 'resources/js/site.js',
-                'public/js/bundle.js'
+                'public/js/bundle.js',
+                //'public/css/custom.css'
+
                 //'public/css/style.css'
                 // Control Panel assets.
                 // https://statamic.dev/extending/control-panel#adding-css-and-js-assets

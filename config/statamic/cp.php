@@ -120,7 +120,7 @@ return [
 
     'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Caminho Proffisional'),
 
-    'custom_logo_url' => asset(env('STATAMIC_CUSTOM_LOGO_URL', 'assets/logo_for_ligth.png')),
+    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
 
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 
