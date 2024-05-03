@@ -1,10 +1,11 @@
 {{partial:header }}
 <!-- ===== Blog Grid Start ===== -->
 <section class="ji gp uq">
+<h1 class="fk or kk wm wb center">Notícias</h1>
     <div class="bb ye ki xn vq jb jo">
         <div class="wc qf pn xo zf iq">
             <!-- Blog Item -->
-            {{ collection:news }}
+            {{ collection:news sort="title:asc" }}
             <div class="animate_top sg vk rm xm">
                 <div class="c rc i z-1 pg">
                     <img class="w-full" src="images/blog-01.png" alt="Blog" />
@@ -30,7 +31,7 @@
                     </h4>
                 </div>
             </div>
-            {{ /collection:news  }}
+            {{ /collection:news }}
         </div>
 
         <!-- Pagination -->
@@ -89,4 +90,3 @@
 </section>
 <!-- ===== Blog Grid End ===== -->
 <script defer src="../js/bundle.js"></script>
-
