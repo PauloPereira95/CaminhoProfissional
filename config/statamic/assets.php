@@ -119,7 +119,7 @@ return [
         | Append Original Filename
         |--------------------------------------------------------------------------
         |
-        | Append the original filename to Glide generated URLs. 
+        | Append the original filename to Glide generated URLs.
         | This helps with Search Engine Optimization.
         |
         */

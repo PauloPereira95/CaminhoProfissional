@@ -407,7 +407,7 @@ body{
   position: relative;
   z-index: 1;
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: px;
   line-height: 26px;
   font-weight: 400;
   --tw-text-opacity: 1;
@@ -2589,4 +2589,22 @@ h1,  h2,  h3,  h4,  h5,  h6{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.bard-content {
+    line-height: 30px;
+    color: rgb(34, 33, 33);
+}
+.bard-content p {
+    margin-top: 20px;
+}
+.bard-content h1 {
+    font-size: 30px;
+}
+.font-50 {
+    font-size: 50px;
 }
