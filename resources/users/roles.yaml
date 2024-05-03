@@ -1,4 +1,23 @@
-# admin:
-#   title: Administrator
-#   permissions:
-#     - super
+user_content:
+  title: 'User Content'
+  permissions:
+    - 'access cp'
+    - 'configure fields'
+    - 'configure form fields'
+    - 'configure collections'
+    - 'view about_us entries'
+    - 'edit about_us entries'
+    - 'view testimonials entries'
+    - 'edit testimonials entries'
+    - 'view news entries'
+    - 'edit news entries'
+    - 'view pages entries'
+    - 'edit pages entries'
+    - 'configure taxonomies'
+    - 'view tags terms'
+    - 'edit tags terms'
+    - 'view assets assets'
+    - 'upload assets assets'
+    - 'configure forms'
+    - 'view contact_form form submissions'
+    - 'delete contact_form form submissions'

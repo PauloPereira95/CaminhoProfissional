@@ -1,4 +1,4 @@
-# admin:
-#   title: Administrators
-#   roles:
-#     - admin
+content_users:
+  title: 'Content Users'
+  roles:
+    - user_content
