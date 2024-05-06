@@ -17,6 +17,8 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              validate:
+                - required
           -
             handle: email
             field:
@@ -30,6 +32,8 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              validate:
+                - required
           -
             handle: phone_number
             field:
@@ -82,3 +86,5 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              validate:
+                - required
