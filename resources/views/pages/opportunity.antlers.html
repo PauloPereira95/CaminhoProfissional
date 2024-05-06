@@ -1,0 +1,89 @@
+{{ partial:header }}
+<section id="{{ slug }}" class="i pg fh rm ji gp uq">
+    <!-- Bg Shapes -->
+    {{# <h1>{{ title }}</h1> #}}
+    {{# <h3>{{ content }}</h3> #}}
+    <div class="i va bb ye ki xn wq jb mo">
+        <div class="tc uf sn tf rn un zf xl:gap-10">
+            <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
+                <!-- Bg Shapes -->
+                <div>
+                    <h4 class="wj kk wm qb">{{ title }}</h4>
+                    <span class="rc nd rh tm lc fb"></span>
+                    {{ content }}
+                </div>
+            </div>
+
+            <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
+                {{ form:opportunity_form js="alpine" }}
+                {{ if success }} <p class="text-yellow font-bold mb-4">Thanks! Someone will be in touch soon.</p>{{ /if
+                }}
+                {{ if errors }}
+                <p>Theese are errors !
+                    {{ errors }}
+                <p>{{ value }}</p>
+                {{ /errors }}
+                {{ /if }}
+                {{# <form action="https://formbold.com/s/unique_form_id" method="POST"> #}}
+                    <div class="tc sf yo ap zf ep qb">
+
+                        {{ fields }}
+                        {{ if handle == "name" }}
+                        <div class="vd to/2">
+                            <label class="rc ac" for="fullname">{{ display }}</label>
+                            <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
+                                class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
+                        </div>
+                        {{ /if }}
+                        {{ if handle == "email" }}
+                        <div class="vd to/2">
+                            <label class="rc ac" for="email">{{ display }}</label>
+                            <input type="email" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
+                                class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
+                        </div>
+                        {{ /if }}
+                        {{ /fields }}
+                    </div>
+                    <div class="tc sf yo ap zf ep qb">
+                        {{ fields }}
+                        {{ if handle == "phone_number" }}
+                        <div class="vd to/2">
+                            <label class="rc ac" for="phone">{{ display }}</label>
+                            <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
+                                class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
+                        </div>
+                        {{ /if }}
+                        {{ if handle == "area_of_interest" }}
+                        <div class="vd to/2">
+                            <label class="rc ac" for="phone">{{ display }}</label>
+                            <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
+                                class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
+                        </div>
+                        {{ /if }}
+                        {{ /fields }}
+                    </div>
+                    <div class="fb">
+                        {{ fields }}
+                        {{ if handle == "observations" }}
+                        <label class="rc ac" for="message">{{ display }}</label>
+                        <textarea placeholder="{{ placeholder }}" rows="4" name="{{ handle }}" id="{{ handle }}"
+                            class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 ci"></textarea>
+                        {{ /if }}
+                        {{ /fields }}
+                    </div>
+                    <div class="fb">
+                        {{ fields }}
+                        {{ if handle == "cv" }}
+                        <label class="rc ac" for="message">{{ display }}</label>
+                        <input type="file" name="{{ handle }}" accept="application/pdf" />
+                        {{ /if }}
+                        {{ /fields }}
+                    </div>
+                    <div class="tc xf">
+                        <button class="vc rg lk gh ml il hi gi _l">{{ cta_text }}</button>
+                    </div>
+                    {{ /form:opportunity_form }}
+            </div>
+        </div>
+    </div>
+</section>

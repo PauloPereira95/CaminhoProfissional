@@ -1,0 +1,12 @@
+title: 'Opportunity Form'
+email:
+  -
+    id: lvqyjxme
+    to: '{{ email }}'
+    cc: caminhoprofissional@email.com
+    bcc: '{{ email }}'
+    from: caminhoprofissional@email.com
+    subject: 'Novo Pedido de Opurtunidade de {{ name }}'
+    html: vendor/notifications/opp_email
+    markdown: true
+    attachments: true

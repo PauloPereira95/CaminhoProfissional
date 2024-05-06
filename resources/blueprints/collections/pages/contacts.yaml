@@ -111,6 +111,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
           -
             handle: yellow_shape_2
             field:
@@ -122,17 +123,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-          -
-            handle: blue_shape
-            field:
-              default: true
-              type: toggle
-              display: 'Blue Shape'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+              width: 50
           -
             handle: red_shape_1
             field:
@@ -144,6 +135,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
           -
             handle: red_shape_2
             field:
@@ -155,6 +147,19 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
+          -
+            handle: blue_shape
+            field:
+              default: true
+              type: toggle
+              display: 'Blue Shape'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 50
   sidebar:
     display: Sidebar
     sections:
@@ -175,3 +180,11 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
