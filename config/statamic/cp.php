@@ -39,6 +39,12 @@ return [
 
     'widgets' => [
         'getting_started',
+        // [
+        //     'type' => 'collection',
+        //     'collection' => 'news',
+        //     'limit' => 2,
+        //     'sort' => 'title:asc'
+        // ]
     ],
 
     /*

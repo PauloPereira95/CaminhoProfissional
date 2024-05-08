@@ -4,7 +4,8 @@
             <a href="/">
 
                 <img class="om" src="{{ glide:company_logo:company_logo width='190' height='55' }}" alt="Logo Light" />
-                <img class="xc nm" src="{{ glide:company_logo_dark:company_logo_dark width='190' height='55' }}" alt="Logo Light" />
+                <img class="xc nm" src="{{ glide:company_logo_dark:company_logo_dark width='190' height='55' }}"
+                    alt="Logo Light" />
             </a>
             <!-- Hamburger Toggle BTN -->
             <button class="po rc" @click="navigationOpen = !navigationOpen">
@@ -44,7 +45,19 @@
                 </div>
 
                 {{# <a href="/cp" class="ek pk xl nk yl ok">Login</a> #}}
-                <a href="/cp" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">Login</a>
+
+                {{ if logged_in }}
+                <p>Olá, {{ user:name }}!</p>
+                {{ if user:super }}
+                <a href="/cp" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">CP Panel</a>
+                {{ /if }}
+                <form action="/logout" method="POST">
+                    {{ csrf_field }}
+                    <input type="submit" value="Logout" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">
+                </form>
+                {{ else }}
+                <a href="{{ oauth:github }}">Login GitHub</a>
+                {{ /if }}
             </div>
         </div>
     </div>

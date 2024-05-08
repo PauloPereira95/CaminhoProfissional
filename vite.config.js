@@ -9,7 +9,7 @@ export default defineConfig({
                 'resources/css/site.css',
                 'resources/js/site.js',
                 'public/js/bundle.js',
-                //'public/css/custom.css'
+                'public/css/custom.css'
 
                 //'public/css/style.css'
                 // Control Panel assets.

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SiteController;
 use Statamic\Facades\Taxonomy;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
@@ -18,7 +19,9 @@ use App\Http\Controllers\NewsController;
 // Get All Tags
 
 Route::statamic('{slug}/search', 'search');
-Route::get('/tags' , function (){
+Route::get('/', [SiteController::class , 'index'])->name('site.index');
+Route::post('/logout' , [SiteController::class , 'logout'])->name('site.logout');
+Route::get('/tags', function () {
     $taxonomy = Taxonomy::find('tags')->terms()->get();
     return response()->json($taxonomy);
 });
