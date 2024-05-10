@@ -2599,10 +2599,15 @@ h1,  h2,  h3,  h4,  h5,  h6{
     line-height: 30px;
     color: rgb(34, 33, 33);
 }
+
 .bard-content p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+.bard-content ol, .bard-content ul {
+    list-style: circle;
+}
+
 .bard-content h1 {
     font-size: 30px;
 }

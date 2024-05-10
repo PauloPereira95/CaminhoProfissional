@@ -15,7 +15,7 @@
         "laravel/sanctum": "^3.2",
         "laravel/socialite": "^5.13",
         "laravel/tinker": "^2.8",
-        "statamic/cms": "^4.0",
+        "statamic/cms": "^5.0",
         "stoffelio/statamic-404-logger": "^1.0"
     },
     "require-dev": {

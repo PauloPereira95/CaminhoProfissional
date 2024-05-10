@@ -1,21 +1,18 @@
 {{partial:header}}
-{{ php }}
-\Carbon\Carbon::setLocale('pt');
-{{ /php }}
 <section class="gj qp gr hj rp hr">
     <div class="bb ze ki xn">
-
         <div
-            class="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-7.5 md:p-10">
+            class="animate_top rounded-md shadow-solid-13 bg-white dark:bg-black section border border-stroke dark:border-strokedark p-7.5 md:p-10">
             <h2 class="ek vj 2xl:ud-text-title-lg kk wm nb gb center font-50 gc">{{ title }}</h2>
             <img src="{{ glide:image width='1400' height='400' }}" alt="Blog" />
-            <div class="db bard-content font-30">
+            <div class="wm db bard-content font-30">
                 {{ content }}
             </div>
             <div class="db bottom-right">
                 <ul class="tc uf cg 2xl:ud-gap-15 fb">
                     <li><span class="rc kk wm">Autor: </span> {{ author:name }}</li>
-                    <li><span class="rc kk wm">Publicado em: </span> {{ date | format: 'j \d\e F, Y' | translate_month}}</li>
+                    <li><span class="rc kk wm">Publicado em: </span> {{ date | format: 'j \d\e F, Y' | translate_month}}
+                    </li>
                 </ul>
             </div>
         </div>
