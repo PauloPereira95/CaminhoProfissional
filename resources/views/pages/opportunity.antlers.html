@@ -8,7 +8,7 @@
             <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
                 <!-- Bg Shapes -->
                 <div>
-                    <h4 class="wj kk wm qb">{{ title }}</h4>
+                    <h4 class="wj kk wm qb font-25 ek">{{ title }}</h4>
                     <span class="rc nd rh tm lc fb"></span>
                     {{ content }}
                 </div>
@@ -16,7 +16,7 @@
 
             <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
                 {{ form:opportunity_form js="alpine" }}
-                {{ if success }} <p class="text-yellow font-bold mb-4">Thanks! Someone will be in touch soon.</p>{{ /if
+                {{ if success }} <p class="wm text-yellow font-bold mb-4">Thanks! Someone will be in touch soon.</p>{{ /if
                 }}
                 {{ if errors }}
                 <p>Theese are errors !
@@ -30,14 +30,14 @@
                         {{ fields }}
                         {{ if handle == "name" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="fullname">{{ display }}</label>
+                            <label class="wm rc ac" for="fullname">{{ display }}</label>
                             <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
                         {{ /if }}
                         {{ if handle == "email" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="email">{{ display }}</label>
+                            <label class="wm rc ac" for="email">{{ display }}</label>
                             <input type="email" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
@@ -48,14 +48,14 @@
                         {{ fields }}
                         {{ if handle == "phone_number" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="phone">{{ display }}</label>
+                            <label class="wm rc ac" for="phone">{{ display }}</label>
                             <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
                         {{ /if }}
                         {{ if handle == "area_of_interest" }}
                         <div class="vd to/2">
-                            <label class="rc ac" for="phone">{{ display }}</label>
+                            <label class="wm rc ac" for="phone">{{ display }}</label>
                             <input type="text" name="{{ handle }}" id="{{ handle }}" placeholder="{{ placeholder }}"
                                 class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                         </div>
@@ -65,7 +65,7 @@
                     <div class="fb">
                         {{ fields }}
                         {{ if handle == "observations" }}
-                        <label class="rc ac" for="message">{{ display }}</label>
+                        <label class="wm rc ac" for="message">{{ display }}</label>
                         <textarea placeholder="{{ placeholder }}" rows="4" name="{{ handle }}" id="{{ handle }}"
                             class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 ci"></textarea>
                         {{ /if }}
@@ -74,7 +74,7 @@
                     <div class="fb">
                         {{ fields }}
                         {{ if handle == "cv" }}
-                        <label class="rc ac" for="message">{{ display }}</label>
+                        <label class="wm rc ac" for="message">{{ display }}</label>
                         <input type="file" name="{{ handle }}" accept="application/pdf" />
                         {{ /if }}
                         {{ /fields }}
@@ -87,3 +87,4 @@
         </div>
     </div>
 </section>
+<script defer src="../js/bundle.js"></script>

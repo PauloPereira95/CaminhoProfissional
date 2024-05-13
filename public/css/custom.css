@@ -2614,8 +2614,11 @@ h1,  h2,  h3,  h4,  h5,  h6{
 .font-50 {
     font-size: 50px;
 }
-.font-30 {
+.font-18 {
     font-size: 18px;
+}
+.font-25 {
+    font-size: 25px;
 }
 .rounded-10 {
     border-radius: 10px;
