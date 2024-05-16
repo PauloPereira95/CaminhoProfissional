@@ -47,16 +47,19 @@
                 {{# <a href="/cp" class="ek pk xl nk yl ok">Login</a> #}}
 
                 {{ if logged_in }}
-                <p>Olá, {{ user:name }}!</p>
-                {{ if user:super }}
-                <a href="/cp" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">CP Panel</a>
-                {{ /if }}
+                    {{ user }}
+                        <p>Olá, {{ name }}!</p>
+
+                        {{ if super }}
+                        <a href="/cp" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">CP Panel</a>
+                        {{ /if }}
+                    {{ /user }}
                 <form action="/logout" method="POST">
                     {{ csrf_field }}
                     <input type="submit" value="Logout" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">
                 </form>
                 {{ else }}
-                <a href="{{ oauth:github }}">Login GitHub</a>
+                <a class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh" href="{{ oauth:github }}">Login GitHub</a>
                 {{ /if }}
             </div>
         </div>
