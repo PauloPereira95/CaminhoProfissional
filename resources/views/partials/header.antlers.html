@@ -47,13 +47,49 @@
                 {{# <a href="/cp" class="ek pk xl nk yl ok">Login</a> #}}
 
                 {{ if logged_in }}
-                    {{ user }}
-                        <p>Olá, {{ name }}!</p>
+                {{ user }}
+                {{# <p>Olá, {{ name }}!</p> #}}
+                <ul class="tc _o sf yo cg ep">
+                    {{# <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li> #}}
+                    {{# <li><a href="index.html#features" class="xl">Features</a></li> #}}
+                    <li class="c i" x-data="{ dropdown: false }">
+                        <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
+                            :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
+                            {{ name }}
 
-                        {{ if super }}
-                        <a href="/cp" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">CP Panel</a>
-                        {{ /if }}
-                    {{ /user }}
+                            <svg :class="{ 'wh': dropdown }" class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown Start -->
+                        <ul class="a" :class="{ 'tc': dropdown }">
+                            <li>
+                                <div class="text-lg group relative w-max">
+                                    <a href="/" class="">Perfil</a>
+                                    <span
+                                        class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
+
+                                </div>
+                            </li>
+                            {{ if super }}
+                            <li>
+                                <div class="text-lg group relative w-max">
+                                    <a href="/cp" class="">CP Panel</a>
+                                    <span
+                                        class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
+                                </div>
+                            </li>
+                            {{ /if }}
+                            <p class="">
+                            </p>
+                        </ul>
+                        <!-- Dropdown End -->
+                    </li>
+                </ul>
+                {{ /user }}
                 <form action="/logout" method="POST">
                     {{ csrf_field }}
                     <input type="submit" value="Logout" class="lk gh dk rg tc wf xf _l gi hi hh/[0.15] sh">
