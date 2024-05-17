@@ -19,9 +19,12 @@ use App\Http\Controllers\NewsController;
 // Get All Tags
 
 Route::statamic('{slug}/search', 'search');
+Route::statamic('cliente/perfil', 'profile/show');
+Route::statamic('{slug}/cliente/perfil', 'profile/show');
 Route::get('/', [SiteController::class , 'index'])->name('site.index');
 Route::post('/logout' , [SiteController::class , 'logout'])->name('site.logout');
 Route::get('/tags', function () {
     $taxonomy = Taxonomy::find('tags')->terms()->get();
     return response()->json($taxonomy);
 });
+

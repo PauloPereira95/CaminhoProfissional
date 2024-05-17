@@ -3,5 +3,7 @@ roles:
   - user_content
 groups:
   - content_users
+avatar: hero.png
+super: false
 id: 07d325ca-9ba7-4ec1-a5b5-11ee4b0ae102
 password_hash: $2y$10$rmCT2lh76g/Dldh9kEPEHeJPXKr8Xl0xjWWWITRHhYNYu1qpppRXK
