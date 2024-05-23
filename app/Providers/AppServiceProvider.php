@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Statamic\Statamic;
+use Spatie\Flash\Flash;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+
     }
 
     /**
@@ -21,6 +22,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(resource_path('views/vendor/notifications'), 'email');
+        Flash::levels([
+            'success' => 'bg-green-600 text-white p-2',
+            'error' => 'bg-red-800 text-white p-2',
+        ]);
+        // this would probably go in a service provider
+
+
         // Statamic::vite('app', [
         //     'resources/js/cp.js',
         //     'resources/css/cp.css',
